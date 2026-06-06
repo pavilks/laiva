@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #0b1e2d;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+  background: #123a57;
+}
+
+#boats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: #163d5a;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  background: #00b4d8;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background: #0096c7;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+#close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
